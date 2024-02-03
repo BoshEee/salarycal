@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #3498db;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left; /* Align text to the left for labels */
+    color: #fff;
+    width: 300px; /* Set a specific width for the box */
+}
+
+label {
+    display: block; /* Each label on a new line */
+    margin-bottom: 8px; /* Space between labels and inputs */
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px; /* Space between inputs */
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27ae60;
+}

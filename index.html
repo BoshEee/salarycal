@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add the html2pdf library -->
+    <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <title>Salary Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Salary Calculator</h1>
+
+        <label for="workingHours">Working Hours:</label>
+        <input type="number" id="workingHours" placeholder="Enter working hours">
+
+        <label for="hourlyRate">Hourly Rate (Regular):</label>
+        <input type="number" id="hourlyRate" placeholder="Enter hourly rate for working hours">
+
+        <label for="bonusHours">Bonus Hours:</label>
+        <input type="number" id="bonusHours" placeholder="Enter bonus hours">
+
+        <label for="bonusHourlyRate">Hourly Rate (Bonus):</label>
+        <input type="number" id="bonusHourlyRate" placeholder="Enter hourly rate for bonus hours">
+
+        <button onclick="calculateSalary()">Calculate</button>
+        <div id="result"></div>
+
+        <!-- Add the PDF download button -->
+        <button onclick="downloadPDF()">Download as PDF</button>
+    </div>
+
+    <!-- Add the script.js file after html2pdf library -->
+    <script src="index.js"></script>
+</body>
+
+</html>
